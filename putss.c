@@ -1,0 +1,21 @@
+#include "main.h"
+/**
+ * putss - To print out a string to stdio
+ *
+ * @c: string
+ * Return: number of bytes to be printed
+ */
+
+int putss(char *c)
+{
+	int count = 0;
+
+	if (c)
+	{
+		for (count = 0; c[count] != '\0'; count++)
+		{
+			write_putchar(c[count]);
+		}
+	}
+	return (count);
+}
